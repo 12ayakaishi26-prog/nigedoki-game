@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="広島市安佐南区緑井で暮らす人・訪れる人向けの土砂災害、洪水、内水氾濫と情報の見方">
+<title>緑井の災害リスクを知る｜にげどきチキンレース</title>
+<style>
+  :root{--ink:#17324d;--muted:#52677a;--paper:#f7fbff;--line:#d7e3ec;--blue:#1565a8;--blue-dark:#0d3f68;--orange:#d95b16;--red:#c62828;--yellow:#f6d743;--green:#237a49;}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;color:var(--ink);background:linear-gradient(180deg,#dff2ff 0,#f7fbff 32rem);font-family:"BIZ UDPGothic","Hiragino Maru Gothic ProN","Yu Gothic",sans-serif;line-height:1.75}
+  a{color:#075e9e;text-decoration-thickness:2px;text-underline-offset:3px}
+  a:focus-visible,summary:focus-visible{outline:4px solid #f2a900;outline-offset:3px}
+  .wrap{width:min(1080px,calc(100% - 32px));margin:auto}
+  header{padding:4.5rem 0 3.5rem;background:linear-gradient(135deg,#0e4c79,#1d7db3 58%,#65b9d8);color:#fff}
+  .eyebrow{font-weight:700;letter-spacing:.08em;color:#dff5ff}
+  h1{font-size:clamp(2rem,5vw,4rem);line-height:1.25;margin:.5rem 0 1rem;letter-spacing:.02em}
+  .lead{font-size:clamp(1.05rem,2.1vw,1.35rem);max-width:45rem;margin:0}
+  .notice{margin:-1.8rem auto 2.4rem;padding:1.35rem 1.5rem;background:#fff7e2;border:3px solid #e5a400;border-radius:18px;box-shadow:0 8px 25px #12324d22}
+  .notice strong{color:#8b4300}
+  section{margin:3.2rem 0}
+  h2{font-size:clamp(1.55rem,3vw,2.25rem);line-height:1.35;margin:0 0 1rem}
+  h3{font-size:1.25rem;line-height:1.4;margin:.2rem 0 .55rem}
+  .section-lead{color:var(--muted);margin-top:-.4rem}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+  .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:1.25rem;box-shadow:0 5px 18px #163b5010}
+  .card p{margin:.4rem 0 0;color:#304b61}
+  .card .icon{font-size:2.4rem;line-height:1}
+  .card.slope{border-top:7px solid #a34b25}
+  .card.river{border-top:7px solid #1a6ea9}
+  .card.inner{border-top:7px solid #5a7391}
+  .mapbox{display:grid;grid-template-columns:1.1fr .9fr;gap:1rem;align-items:stretch}
+  .mapbox .panel{background:var(--blue-dark);color:#fff;border-radius:18px;padding:1.5rem}
+  .mapbox .panel p{color:#e7f4fb}
+  .mapbox ul{margin:.7rem 0 0;padding-left:1.2rem}
+  .mapbox li{margin:.35rem 0}
+  .steps{counter-reset:step;display:grid;gap:.75rem}
+  .step{display:grid;grid-template-columns:3.4rem 1fr;gap:1rem;align-items:start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:1rem 1.2rem}
+  .step::before{counter-increment:step;content:counter(step);display:grid;place-items:center;width:2.7rem;height:2.7rem;border-radius:50%;background:var(--blue);color:#fff;font-size:1.35rem;font-weight:700}
+  .step h3{margin:0}
+  .step p{margin:.2rem 0 0;color:#304b61}
+  .source-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+  .source{display:flex;flex-direction:column;gap:.4rem;background:#fff;border:1px solid var(--line);border-radius:14px;padding:1.1rem 1.2rem}
+  .source a{font-weight:700;font-size:1.08rem}
+  .source small{color:var(--muted)}
+  .source .button{align-self:flex-start;margin-top:auto}
+  .button{display:inline-block;padding:.55rem .85rem;border-radius:9px;background:#e6f3fb;color:#0d4c78;font-weight:700;text-decoration:none}
+  .button:hover{background:#cde8f6}
+  .warning{background:#fff0ef;border:2px solid #d6574e;border-radius:16px;padding:1.25rem 1.4rem}
+  .warning h2{color:#9d231d}
+  .warning ul{margin:.5rem 0 0;padding-left:1.3rem}
+  details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:.8rem 1rem;margin:.7rem 0}
+  summary{cursor:pointer;font-weight:700}
+  footer{margin-top:4rem;padding:2rem 0 3rem;background:#17324d;color:#e7f4fb;font-size:.9rem}
+  footer a{color:#bdeaff}
+  .updated{color:#d1e4ef}
+  @media(max-width:760px){
+    .wrap{width:min(100% - 22px,650px)}
+    header{padding:3rem 0 2.8rem}
+    .grid,.mapbox,.source-grid{grid-template-columns:1fr}
+    .notice{margin-top:-1.2rem;padding:1rem}
+    .step{grid-template-columns:2.8rem 1fr;gap:.7rem;padding:.9rem}
+    .step::before{width:2.3rem;height:2.3rem}
+  }
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">緑井を知るための防災メモ</div>
+    <h1>緑井は、山・川・市街地が近い</h1>
+    <p class="lead">同じ雨でも、山ぎわの土砂災害、太田川の洪水、古川や側溝の内水氾濫では、見るべき情報と避難の判断が変わります。まず自宅・職場・学校の場所をハザードマップで確認し、このページは「どの情報を、どの順番で見るか」の補助に使ってください。</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="notice"><strong>このページだけで避難先を決めないでください。</strong><br>危険区域・避難場所・通行できる経路は場所ごとに違います。大雨のときは、広島市防災ポータルと自治体の避難情報を確認し、危険な場所にいる人は警戒レベル4までに立退き避難を完了することが基本です。すでに危険が迫っているときは、無理に川や斜面へ近づかず、その時点で最善の安全確保を選びます。</div>
+
+  <section aria-labelledby="risk-title">
+    <h2 id="risk-title">緑井で考える3つの危険</h2>
+    <p class="section-lead">災害の種類によって「上流」の意味も、危険が届く速さも違います。</p>
+    <div class="grid">
+      <article class="card slope">
+        <div class="icon" aria-hidden="true">⛰️</div>
+        <h3>山ぎわ・谷筋の土砂災害</h3>
+        <p>阿武山・権現山などの山ぎわや渓流に近い場所では、斜面崩壊・土石流が短時間で起こり得ます。雨が弱くなった後も、地面にしみた水で崩れることがあります。山鳴り、川の濁り、がけのひび割れ、急な湧き水などを見つけたら、情報を待ち続けず安全な場所へ移動するきっかけにします。</p>
+      </article>
+      <article class="card river">
+        <div class="icon" aria-hidden="true">🌊</div>
+        <h3>太田川水系の洪水</h3>
+        <p>緑井の空が晴れていても、太田川の上流で降った雨が後から水位に影響します。可部〜安芸太田町など上流の雨量、太田川の水位・河川カメラ、洪水予報、ダム放流通知を組み合わせて確認します。上流で降った雨が、時間差で緑井の水位を押し上げることがあります。</p>
+      </article>
+      <article class="card inner">
+        <div class="icon" aria-hidden="true">🏘️</div>
+        <h3>古川・側溝・低地の内水氾濫</h3>
+        <p>大河川が平常でも、短時間の強い雨で下水・側溝・小河川の排水が追いつかず、道路や敷地が浸水することがあります。古川などでは八木方面と自分のいる場所の雨も見比べ、自宅周辺の低い道、アンダーパス、地下・半地下、通学路の水の集まりやすい場所を平時に確認しておきます。</p>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="upstream-title">
+    <h2 id="upstream-title">「上流を見る」は、災害ごとに見る場所が違う</h2>
+    <div class="mapbox">
+      <div class="panel">
+        <h3>太田川の洪水を見るとき</h3>
+        <ul>
+          <li>緑井周辺の雨だけでなく、太田川上流の雨量を見る</li>
+          <li>水位観測所・河川カメラで、水位の上昇と流れの変化を見る</li>
+          <li>洪水予報、水位到達情報、ダム放流通知を確認する</li>
+          <li>雨がやんだ後も、上流からの水が後から届く可能性を残す</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>緑井の「上流」は一つではない</h3>
+        <p>太田川の水位を見る情報と、山ぎわの渓流・斜面を見る情報は別です。土砂災害では、遠くの雨量を見ている間に危険が近づくことがあります。自宅の周囲で「音・水・斜面」を見る視点も、スマホの公式情報と同じくらい重要です。</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="prepare-title">
+    <h2 id="prepare-title">平時に決めておく4つ</h2>
+    <div class="steps">
+      <div class="step"><div><h3>自宅の危険を確認する</h3><p>洪水・内水・土砂災害のどれが想定されるか、家屋倒壊等氾濫想定区域や土砂災害警戒区域に当たるかを確認します。</p></div></div>
+      <div class="step"><div><h3>災害ごとの避難先を分ける</h3><p>「避難所ならどこでもよい」ではありません。洪水と土砂災害で安全な場所が違うことがあるため、指定緊急避難場所の対象災害を確認します。</p></div></div>
+      <div class="step"><div><h3>明るいうちの経路を歩いてみる</h3><p>川・側溝・崖・低い道路を避ける経路を、昼間に家族や近所の人と確認します。高齢者、子ども、ペット、車いすなど、時間のかかる人を基準にします。</p></div></div>
+      <div class="step"><div><h3>通知を受け取れる状態にする</h3><p>広島市防災ポータル、自治体の通知、気象庁の情報、家族との連絡手段を平時に整えます。災害が始まってからアプリや避難先を探さないようにします。</p></div></div>
+    </div>
+  </section>
+
+  <section class="warning" aria-labelledby="danger-title">
+    <h2 id="danger-title">すでに危険が近いとき</h2>
+    <ul>
+      <li>川・橋・水が集まる道路・崖・沢を見に行かない。ライブカメラや公式情報で確認する。</li>
+      <li>土砂災害のおそれがある区域では、家の上階に移ることを「安全」と決めつけず、立退き避難を優先する。</li>
+      <li>避難経路がすでに危険な場合は、無理に水や土砂を横切らず、崖や沢筋から離れた頑丈な場所など、その時点で最善の安全確保を選ぶ。</li>
+      <li>命の危険がある場合は119。避難情報や開設状況は広島市防災ポータルで確認する。</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="source-title">
+    <h2 id="source-title">緑井でブックマークしておく公式情報</h2>
+    <div class="source-grid">
+      <div class="source"><a href="https://www.bousai.city.hiroshima.lg.jp/" target="_blank" rel="noopener">広島市防災ポータル</a><small>避難情報、避難場所の開設、雨量・河川水位、防災情報マップ</small><a class="button" href="https://www.bousai.city.hiroshima.lg.jp/" target="_blank" rel="noopener">現在の状況を見る</a></div>
+      <div class="source"><a href="https://www.sabo.pref.hiroshima.lg.jp/portal/" target="_blank" rel="noopener">土砂災害ポータルひろしま</a><small>土砂災害警戒区域・特別警戒区域、土砂災害危険度、警戒情報</small><a class="button" href="https://www.sabo.pref.hiroshima.lg.jp/portal/" target="_blank" rel="noopener">土砂の危険度を見る</a></div>
+      <div class="source"><a href="https://www.river.go.jp/portal/" target="_blank" rel="noopener">川の防災情報（国土交通省）</a><small>太田川水系の雨量、水位、河川カメラ、洪水予報、ダム放流通知</small><a class="button" href="https://www.river.go.jp/portal/" target="_blank" rel="noopener">川の状況を見る</a></div>
+      <div class="source"><a href="https://www.river.go.jp/kawabou/pc/tm?itmkndCd=004&amp;obsCd=00018&amp;ofcCd=22333" target="_blank" rel="noopener">祇園大橋観測所（太田川）</a><small>太田川の水位を個別に確認</small><a class="button" href="https://www.river.go.jp/kawabou/pc/tm?itmkndCd=004&amp;obsCd=00018&amp;ofcCd=22333" target="_blank" rel="noopener">観測所を見る</a></div>
+      <div class="source"><a href="https://www.jma.go.jp/bosai/warning/" target="_blank" rel="noopener">気象庁 警報・注意報</a><small>大雨・土砂災害・洪水に関する防災気象情報</small><a class="button" href="https://www.jma.go.jp/bosai/warning/" target="_blank" rel="noopener">警報を確認する</a></div>
+      <div class="source"><a href="https://www.jma.go.jp/bosai/risk/" target="_blank" rel="noopener">気象庁 キキクル</a><small>土砂災害・浸水・洪水の危険度分布。危険区域と重ねて見る</small><a class="button" href="https://www.jma.go.jp/bosai/risk/" target="_blank" rel="noopener">危険度分布を見る</a></div>
+      <div class="source"><a href="https://www.bousai.city.hiroshima.lg.jp/link/" target="_blank" rel="noopener">広島市防災ポータル 防災リンク集</a><small>広島県河川防災情報、太田川河川事務所など地域の公式リンク</small><a class="button" href="https://www.bousai.city.hiroshima.lg.jp/link/" target="_blank" rel="noopener">地域リンクを見る</a></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="qa-title">
+    <h2 id="qa-title">よくある思い込み</h2>
+    <details><summary>雨がやんだら、もう大丈夫?</summary><p>太田川の上流から水が後から届いたり、雨を吸った地面が崩れたりすることがあります。川や斜面の危険が消えたと確認できるまでは近づきません。</p></details>
+    <details><summary>自宅の2階に上がれば、どの災害でも安全?</summary><p>いいえ。洪水では条件によって屋内安全確保が選択肢になる場合がありますが、土砂災害では建物自体が被害を受けるおそれがあり、立退き避難が原則です。自宅の場所と災害種別をハザードマップで確認します。</p></details>
+    <details><summary>避難指示が出ていないから、まだ動かなくてよい?</summary><p>避難情報は判断材料の一つです。気象庁のレベル3・4相当情報、土砂災害の前兆、河川の水位、周囲の状況を合わせ、危険な場所にいる人は早めに行動します。</p></details>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>にげどきチキンレース｜緑井の災害リスク案内</strong></p>
+    <p class="updated">作成日: 2026-07-14　／　このページは現在の危険度や避難指示を自動表示しません。必ず公式情報を開いて確認してください。</p>
+    <p><a href="index.html">ゲーム本体へ戻る</a>　<a href="slides.html">展示パネルを見る</a></p>
+  </div>
+</footer>
+</body>
+</html>
